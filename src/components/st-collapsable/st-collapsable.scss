@@ -1,0 +1,26 @@
+.St-Collapsable {
+    display: block;
+    width: 100%;
+    overflow-y: hidden;
+    opacity: 1;
+    transition: max-height 1s;
+  }
+  
+  .St-Collapsable--collapsed {
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .St-Collapsable--dynamic {
+    overflow: hidden;
+  }
+  
+  .St-Collapsable__wrapper {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .St-Collapsable--dynamic.A-Collapsable--collapsed {
+    max-height: 0;
+  }
+  

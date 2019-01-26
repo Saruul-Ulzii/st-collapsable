@@ -3,12 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
+  <title>Stencil Collapsable Component</title>
+  <script src="/build/stcollapsable.js"></script>
 
 </head>
 <body>
 
+  <button class="St-Collapsable__trigger" st-collapsable-trigger="collapsable">trigger</button>
+
+  <st-collapsable collapsed="false" collapsable-id="collapsable">
+    <div>test</div>
+    <div>test</div>
+    <div>test</div>
+    <div>test</div>
+  </st-collapsable>
 
 </body>
 </html>

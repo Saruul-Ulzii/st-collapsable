@@ -12,58 +12,41 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+  interface StCollapsable {
+    'collapsableId': string;
+    'collapsed': boolean;
+    'toggle': (triggerElement?: any) => void;
   }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+  interface StCollapsableAttributes extends StencilHTMLAttributes {
+    'collapsableId'?: string;
+    'collapsed'?: boolean;
+    'onCollapseHandler'?: (event: CustomEvent) => void;
+    'onExpandHandler'?: (event: CustomEvent) => void;
   }
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
+    'StCollapsable': Components.StCollapsable;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
+    'st-collapsable': Components.StCollapsableAttributes;
   }
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLStCollapsableElement extends Components.StCollapsable, HTMLStencilElement {}
+  var HTMLStCollapsableElement: {
+    prototype: HTMLStCollapsableElement;
+    new (): HTMLStCollapsableElement;
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
+    'st-collapsable': HTMLStCollapsableElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'st-collapsable': HTMLStCollapsableElement;
   }
 
 
