@@ -4,7 +4,7 @@
 
 
 ## What is it?
-st-img is a web component built with [Stencil](https://stenciljs.com/) that makes any html content collpasable. It works in pretty much same way as [BS collpsable](https://www.w3schools.com/bootstrap/bootstrap_collapse.asp) tough it has some extensions.  
+st-collapsable is a web component built with [Stencil](https://stenciljs.com/) that makes any html content collpasable. It works in pretty much same way as [BS collpsable](https://www.w3schools.com/bootstrap/bootstrap_collapse.asp) tough it has some extensions.  
 
 
 ## Usage
@@ -17,7 +17,7 @@ To use this component in your app, no matter what framework you are using, follo
     <div>My collapsable html content</div>
   </st-collapsable>
 ```
-- define triggers for your collapsable content (it is crucial that your trigger has class St-Collapsable__trigger and points to id of collapsable content with st-collapsable-trigger:
+- define triggers for your collapsable content (it is crucial that your trigger has class St-Collapsable__trigger and points to id of collapsable content with st-collapsable-trigger):
 ``` 
   <button class="St-Collapsable__trigger" st-collapsable-trigger="collapsable-test">trigger</button>
   <span class="St-Collapsable__trigger" st-collapsable-trigger="collapsable-test">trigger</span>
