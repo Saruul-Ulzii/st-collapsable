@@ -10,7 +10,7 @@ st-collapsable is a web component built with [Stencil](https://stenciljs.com/) t
 ## Usage
 To use this component in your app, no matter what framework you are using, follow these steps:
 
-- pop this script tag `<script async defer src='https://unpkg.com/st-collapsable@0.1.1/dist/stcollapsable.js'></script>` into your index.html
+- pop this script tag `<script async defer src='https://unpkg.com/st-collapsable@0.1.4/dist/stcollapsable.js'></script>` into your index.html
 - define your collapsable content:
 ``` 
   <st-collapsable collapsed="false" collapsable-id="collapsable-test">

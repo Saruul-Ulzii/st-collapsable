@@ -1,6 +1,6 @@
 {
   "name": "st-collapsable",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "web component that makes any html content collpasable",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
