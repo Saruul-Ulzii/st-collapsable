@@ -1,6 +1,6 @@
 {
   "name": "st-collapsable",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "web component that makes any html content collpasable",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -23,5 +23,14 @@
     "@stencil/core": "~0.17.0",
     "@stencil/sass": "~0.1.1"
   },
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarrvis/st-collapsable.git"
+  },
+  "author": "Michał Kaliszewski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarrvis/st-collapsable"
+  },
+  "homepage": "https://github.com/jarrvis/st-collapsable"
 }
